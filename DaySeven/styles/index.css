@@ -1,0 +1,101 @@
+body{
+    background-image:url("/assets/vecteezy_natural-bamboo-wood-texture_9741231.jpg") ;
+}
+
+.container-calculator{
+    /*display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    */
+}
+.brand-calculator{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color:azure;
+    /*
+    Propiedades del texto
+    */
+    font-size: large;
+}
+.form-calculator{
+    width: 500px;
+    height: 700px;
+    margin: 0 auto;
+    background-color: #000000;
+    border-radius: 5%;
+    box-shadow: 10px 10px 30px 10px rgba(24,13,9,1);
+}
+.screen-calculator{
+    width: 450px;
+    height: 150px;
+    border-radius: 10px;
+    background-color:#717d75 ;
+    margin:0 auto;
+    box-shadow: inset 0px 0px 12px 5px rgba(0,0,0,0.75);
+}
+.buttons-calculator{
+    margin: 30px ;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 14px;
+    justify-content: center; 
+}
+.buttons-calculator-numbers{
+    grid-area: 1 / 1 / 5 / 4;
+
+    
+}
+.buttons-calculator-operator{
+    grid-area: 1 / 4 / 5 / 5; 
+}
+
+.btn-number,
+.btn-operator{
+    width: 100px;
+    height: 100px;
+    border-radius: 20% 20%;
+    box-shadow: 0px 0px 2px 2px rgb(50, 50, 50,1); 
+    background: rgb(66,66,66);
+    background: linear-gradient(0deg, rgba(66,66,66,1) 0%, rgba(29,29,29,1) 30%, rgba(18,18,18,1) 100%);
+    color: #aeaeae;
+    font-size: 30px;
+    font-weight: bold;
+    margin: auto;
+}
+
+.btn-operator{
+    background: rgb(0,25,64);
+    background: linear-gradient(0deg, rgba(0,25,64,1) 0%, rgba(0,100,161,1) 50%, rgba(0,118,255,1) 100%);
+}
+
+.btn-number:hover{
+    background: rgb(66,66,66);
+    background: linear-gradient(0deg, rgba(66,66,66,1) 0%, rgba(29,29,29,1) 6%, rgba(18,18,18,1) 100%);
+}
+
+.btn-number:active{
+    background: rgb(66,66,66);
+    background: linear-gradient(0deg, rgba(66,66,66,1) 0%, rgba(29,29,29,1) 6%, rgba(18,18,18,1) 100%);
+    color:#fff45b;
+    text-shadow: 0px 0px 30px rgba(255,244,91,0.96)
+}
+
+.btn-operator:hover{
+    background: rgb(0,25,64);
+    background: linear-gradient(0deg, rgba(0,25,64,1) 10%, rgba(0,100,161,1) 85%, rgba(0,118,255,1) 100%);
+}
+
+.btn-operator:active{
+    background: rgb(0,25,64);
+    background: linear-gradient(0deg, rgba(0,25,64,1) 10%, rgba(0,100,161,1) 85%, rgba(0,118,255,1) 100%);
+    color:#fff45b;
+    text-shadow: 0px 0px 30px rgba(255,244,91,0.96)
+}
